@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lyte | Web Developer</title>
+    
+ <!-- Bootstrap & JQuery -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript" ></script>
+    
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet" type="text/css"/>
+  <script src="libs/angular/angular.js"></script>
+  <script src="libs/firebase/firebase.js"></script>
+  <script src="libs/angularfire/dist/angularfire.js"></script>
+  <script src="libs/angular-route/angular-route.js"></script>
+  <script src="js/app.js" type="text/javascript"></script>
+  <script src="js/controllers/MainCtrl.js"></script>
+  <script src="js/controllers/NavCtrl.js"></script>
+  <script src="js/controllers/ProjectViewCtrl.js"></script>
+  <link href="css/animate.css" rel="stylesheet" type="text/css"/>    
+  <link href="css/main.css" rel="stylesheet" type="text/css"/>   
+</head>
+<body ng-app="angularApp">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div id="wrapper">
+
+      <header>
+          <!--
+       <div id="logo">
+          <a href="#/home"><img src="img/lyte.png">LYTE</a>
+        </div> -->
+        <div id="nav-open">
+          <nav>
+            <ul>
+              <li class="nav-link"><a href="#/home">Home</a></li>
+              <li class="nav-divider"> / </li>
+              <li class="nav-link"><a href="#/projects">Projects</li>
+              <li class="nav-divider"> / </li>
+              <li class="nav-link"><a href="#/about">About</a></li>
+              <li class="nav-divider"> / </li>
+              <li class="nav-link"><a href="#/contact">Contact</a></li>
+              <div class="clear_fix"></div>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <div class="main-content" ng-view=""></div>
+
+    </div>
+  </body>
+</html>
